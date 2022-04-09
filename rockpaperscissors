@@ -1,0 +1,29 @@
+# Rock paper scissors game
+
+import random
+
+moves = ['rock', 'paper', 'scissors']
+computer = random.choice(moves)
+
+user = input("Rock, paper, or scissors? ")
+if user == computer:
+    print("It's a tie!")
+elif user == 'rock':
+    if computer == 'paper':
+        print("You lose!", computer, "covers", user)
+    else:
+        print("You win!", user, "smashes", computer)
+elif user == 'paper':
+    if computer == 'scissors':
+        print("You lose!", computer, "cut", user)
+    else:
+        print("You win!", user, "covers", computer)
+elif user == 'scissors':
+    if computer == 'rock':
+        print("You lose...", computer, "smashes", user)
+    else:
+        print("You win!", user, "cut", computer)
+else:
+    print("That's not a valid play. Check your spelling!")
+
+# Rock paper scissors game
